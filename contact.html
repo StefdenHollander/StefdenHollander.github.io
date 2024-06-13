@@ -2,35 +2,118 @@
 <html lang="en">
 
 <head>
-  <title>Contact</title>
+  <title>Home</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<link rel="stylesheet" href="/css/style.css">
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 </head>
 
-<body>
-  <header>
-    <!-- place navbar here -->
+<body style="background-color: #0c0c0c;
+color: #0c0c0c;">
+  <!-- Navigatiegedeelte van de website -->
+  <header class="text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col p-4">
+          <h1><img style=" width: 180px;" class="Stefpng" src="/img/stef-high-resolution-logo-transparent (1).png" alt="Logo"></h1>
+        </div>
+        <div class="col">
+          <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse p-3" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html"><span>Home</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="/About.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="/projects.html">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      All Content
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item text-white" href="/index.html">Home</a></li>
+                      <li><a class="dropdown-item text-white" href="/About.html">About</a></li>
+                      <li><a class="dropdown-item text-white" href="/projects.html">Projects</a></li>
+                      <li><a class="dropdown-item text-white" href="#">Contact</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
-  <main>
+  <!-- Hoofdgedeelte van de website -->
+  <main class="container my-5">
+    <!-- Titelsectie -->
+    <section class="text-center mb-5 text-light">
+      <h1 class="display-4 fw-bolder">Contact Me</h1>
+    </section>
+    
+    <!-- Dashboardsectie met sociale mediakaarten -->
+    <section class="row">
+      <div class="col-md-3 mb-4">
+        <div style="border-top: 10px solid hsl(208, 92%, 53%);" class="card text-bg-secondary p-3">
+          <div class="card-body text-center">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAVJJREFUSEvlVc15gzAMlbxEw41sAaeaLlIySdJJCosE90S2KDcyBUpFMZ8xNtiHnKIL4B896elJIDzZ8Mn+4UUBZNtLRDwDQMoUI1F9zZOLbPtUAJT8rqlfUFTc7g0RnVSedL7ayLYvEfHbsc930ul+5QMgAOh0RC6Q4nbnMz7rEFANNNQqT9SYnT7J6SHi74xM9DUAVGY2G9HPgERUaOcLAP5gigBAGuFx2h0R1fxkCjz0jFcQsLpmbyczvUUNpgjn4sX2yCaATVGscz5vFziEoiicPyqPtgJtiphjrsOo71hrssNqMqwWuIkEik8CKmMAXPSsKOKFECm6mqzJDkdXQM5h99H2F/ofBUFma98rU3NDz5U9IB81c8PaIbJjXhMoznt12Ip8BTD1QaiC1N5QdGYwRc8qeicgzsSUKw/BH3s+7RXpRf9oe7QEyTTGydbZBzqnpBnMJg34AAAAAElFTkSuQmCC" alt="" class="img-fluid mb-2" style="width: 50px;">
+            <p class="h3">@Cxrsed</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div style="border-top: 10px solid hsl(208, 92%, 53%);" class="card text-bg-secondary p-3">
+          <div class="card-body text-center">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYtJREFUSEu1lU1Sg0AQhV+jB0l2lskCTiDcJBxBKdcm6xR6hMSThBuQRbDcifcwtDWUYAPzA1UJO5ihv9f9enoIV37oyvHhBCy3eQgPIRM9gBECKAFkBP5Ghez0HGQ2kUbA3Vs+u2Ha/QW1xSjPHkefj4ECDx4tYJnmawa9TChfSeD3UxKs+/8MABOCK8UzGZDAmz6kA6jLUtGXRXnJ4M1HEuybPT1BJVUcS186gMXr8WCr+dnjeb/WmozLIvHnjYAWcJ/mKwLtLOr3ReLHzbrK9rbCSnRX+ytVHDVZtABX7WV9XWLk3hawSI9K/cqUAYPjpvYuMSBkxZMfqVgSoMztdIWETQIArQ8uQMcwXXamxigSv479D9B3kBuQHnWZtw3hMrkeA0qJbE/VQU02hnOjAWzzkD06XMJk6dfogzbaZNFBHQ/Ui21UjAXIQzYAqA+mHh8DcA47wwCrP7sAcr07YQ2u9i8cC2AwQUcB+kNNXo9qFnnA7MfD3nSTDabphNtr0lbnpT8pmmbzL5wLDChqozx6AAAAAElFTkSuQmCC" alt="" class="img-fluid mb-2" style="width: 50px;">
+            <p class="h3">@Cxrsed_rl</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div style="border-top: 10px solid hsl(305, 64%, 56%);" class="card text-bg-secondary p-3">
+          <div class="card-body text-center">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAc1JREFUSEvFVb1SwkAQ3g329hYaOsdYJF1SESpfwhnJkwBPIo4PYG8DVoEKmEkcO0PrMxjWbLyLx5E/ZmRIl7m9+37u2z2EI3945PPhNADL69CEMxggYQ8A/BqViVibUUpj58OT/8WWPQXLm3CAiI+igjfMGmw0BYmEkJ6cyBup9TsAzBw7+MmHUkpBGaMyMLGPSZmEFDiRV5DaAVhZcy4aUEpd7OALAJwDwtCO3OemMEhyhDRWVegAzB7s2O2urcWGgC4B4c6O3Fe2DgwwkfCKiN6cd2+ig66s+VTs78s1HYAymRM7doO1tXhIafsFRBeGYdyXXHZCKfVVG4UDPhNsBJAFgpUvpSsJG2Z2Juph0mI7dgvilQoYQCZK91Vb68tLPRzgNhwh4ZAvXU9U2aX+KwCrWFnz4s7Ef57C9hbdhn7WzdNSi6Q6okAm6mAFghVHjxso71Ltkmd27BaRbAuws0npUn0mVcW01qKcrRo9GVeRqF42CjawhaSi0bhRObqVjfY7KpCK6DWNiILA3xzLG7W00ZRhtye/Dki1USe3P65FOliqnPUtxzWQkqhSBZpcHgVy1tdh5O8AfMOk1YPT1vO2dad5k9uya1P3A3xsRyi7Gb/6AAAAAElFTkSuQmCC" alt="Instagram Icon" class="img-fluid mb-2" style="width: 50px;">
 
+            <p class="h3">@Cxrsed</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div style="border-top: 10px solid hsl(0, 78%, 45%);" class="card text-bg-secondary p-3">
+          <div class="card-body text-center">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQhJREFUSEvtlUEOgkAMRVt0IcYhegM8iXITPYl6EvQkehO5gcYx4ga+GQQDEZ2aQOICNiz47Wv/dApTyw+3nJ86gNXhikWnwdjvO+mCgBmIfBPN+ftTJhBFuS4CU8Qpdup+PRT6F0APRnNi3ltLkgiAoIC8AJehChm0kMQLNAcV6yDv7Cm/uOpos0OQOJMY27xYT38DAAGYQ0kRtQDtKnyrUMWaS0OwsnVj9JUOJIAiqQT0vwA99NYE/G6RdYoaOGRzyea2wxN+f78H2lWNAcC09W56WZmibDI4OQor/C6rWxUmwkB6TrJikC9ZdsWiKy+7JO1tJvdztgArHTRSeU2S7o9mdbZ1ix4rgYQZKzgKrQAAAABJRU5ErkJggg==" alt="" class="img-fluid mb-2" style="width: 50px;">
+            <p class="h3">@Cxrsed</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer>
-    <!-- place footer here -->
-  </footer>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
-  </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+  integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+</script>
 </body>
 
 </html>
